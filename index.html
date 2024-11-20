@@ -1,43 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>İnşaat Malzemeleri</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malzeme Satış Firması</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056b3;
+            overflow: hidden;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            display: block;
+            text-align: center;
+            float: left;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #00408a;
+        }
+        main {
+            padding: 20px;
+            background-color: #fff;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-item {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: calc(33% - 20px);
+            box-sizing: border-box;
+            transition: transform 0.3s;
+        }
+        .product-item:hover {
+            transform: translateY(-5px);
+        }
+        .product-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .product-item h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .product-item p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .product-item button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product-item button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 24px;
+            margin: 10px 0 0;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>İnşaat Malzemeleri Firması</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">Hakkımızda</a></li>
-          <li><a href="#products">Ürünler</a></li>
-          <li><a href="#contact">İletişim</a></li>
-        </ul>
-      </nav>
+    <header>
+        <h1>Hoşgeldiniz! Malzeme Satış Firması</h1>
+    </header>
+    <nav>
+        <a href="#">Ana Sayfa</a>
+        <a href="#">Ürünler</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
+    </nav>
+    <div class="hero">
+        <h1>En Kaliteli Malzemeler</h1>
+        <p>Boyalar, Fayanslar ve Hırdavat Ürünleri</p>
     </div>
-  </header>
-
-  <main>
-    <section id="about" class="about-section">
-      <div class="container">
-        <h2>Hakkımızda</h2>
-        <p>Firmamız, kaliteli inşaat malzemeleri ile sektörün güvenilir isimlerinden biridir. Müşterilerimize en iyi hizmeti sunmayı hedefliyoruz.</p>
-      </div>
-    </section>
-
-    <section id="products" class="products-section">
-      <div class="container">
-        <h2>Ürünlerimiz</h2>
-        <div class="product-list">
-          <div class="product-item">
-            <h3>Çimento</h3>
-            <p>Dayanıklı ve uzun ömürlü çimento ürünleri.</p>
-          </div>
-          <div class="product-item">
-            <h3>Tuğla</h3>
-            <p>Yüksek kaliteli tuğlalar ile yapılarınız sağlam olsun.</p>
-          </div>
-          <div
+    <main>
+        <section>
+            <h2>Ürünlerimiz</h2>
+            <div class="product">
+                <div class="product-item">
+                    <img src="boya.jpg" alt="Boya">
+                    <h3>Boya</h3>
+                    <p>Çeşitli renklerde yüksek kaliteli boyalar.</p>
+                    <button>Detaylı Bilgi</button>
+                </div>
+                <div class="product-item">
+                    <img src="fayans.jpg" alt="Fayans">
+                    <h3>Fayans</h3>
+                    <p>Modern ve şık fayans modelleri.</p>
+                    <button>Detaylı Bilgi</button>
+                </div>
+                <div class="product-item">
+                    <img src="hirdavat.jpg" alt="Hırdavat Malzemesi">
+                    <h3>Hırdavat Malzemesi</h3>
+                    <p>Her türlü tamir ve tadilat işleri için gerekli hırdavat malzemeleri.</p>
+                    <button>Detaylı Bilgi</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Hakkımızda</h2>
+            <p>Firmamız, yüksek kaliteli malzemeler ve üstün müşteri hizmeti sunmaktadır. Müşteri memnuniyetini en üst düzeyde tutarak, her zaman en iyi hizmeti vermeyi amaçlıyoruz.</p>
+        </section>
+        <section>
+            <h2>İletişim</h2>
+            <p>Bizimle iletişime geçmek için: info@firmamiz.com</p>
+            <p>Adres: Başkent Caddesi, No: 123, Ankara</p>
+            <p>Telefon: +90 312 123 45 67</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Malzeme Satış Firması. Tüm hakları saklıdır.
+    </footer>
+</body>
+</html>
