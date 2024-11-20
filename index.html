@@ -1,68 +1,43 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilaş Boya</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #FF0105;
-        }
-        header {
-            background-color: #002CFE;
-            color: #fff;
-            padding: 15px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            overflow: hidden;
-        }
-        nav a {
-            color: #fff;
-            padding: 14px 20px;
-            display: block;
-            text-align: center;
-            float: left;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        main {
-            padding: 20px;
-            background-color: #fff;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İnşaat Malzemeleri</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bilaş Boya</h1>
-    </header>
-    <nav>
-        <a href="#">Ana Sayfa</a>
-        <a href="#">Hakkımızda</a>
-        <a href="#">Hizmetler</a>
-        <a href="#">İletişim</a>
-    </nav>
-    <main>
-        <h2>Hoş geldiniz!</h2>
-        <p> Ürünleri aramak için yukarıdaki navigasyonu kullanabilir veya dilerseniz aşağıdan yeni ürünlere göz atabilirsiniz. </p>
-    </main>
-    <footer>
-        &copy; 2024 Bilaş Boya LTD. ŞTİ. Tüm hakları saklıdır.
-    </footer>
-</body>
-</html>
+  <header>
+    <div class="container">
+      <h1>İnşaat Malzemeleri Firması</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Hakkımızda</a></li>
+          <li><a href="#products">Ürünler</a></li>
+          <li><a href="#contact">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>Hakkımızda</h2>
+        <p>Firmamız, kaliteli inşaat malzemeleri ile sektörün güvenilir isimlerinden biridir. Müşterilerimize en iyi hizmeti sunmayı hedefliyoruz.</p>
+      </div>
+    </section>
+
+    <section id="products" class="products-section">
+      <div class="container">
+        <h2>Ürünlerimiz</h2>
+        <div class="product-list">
+          <div class="product-item">
+            <h3>Çimento</h3>
+            <p>Dayanıklı ve uzun ömürlü çimento ürünleri.</p>
+          </div>
+          <div class="product-item">
+            <h3>Tuğla</h3>
+            <p>Yüksek kaliteli tuğlalar ile yapılarınız sağlam olsun.</p>
+          </div>
+          <div
